@@ -32,6 +32,7 @@ int main(int c, char** v)
     double ceil = 1;
     vector<double> states;
     uint32_t states_num = 10000;
+    // we take uniform distribution as the Q
     for(uint32_t i = 0; i < states_num; i++)
     {
         states.push_back(Uniform(floor, ceil));
